@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change Color</title>
+</head>
+<body>
+    <input type="radio" name="colors" id="colors" value="red"><span>Red</span>
+    <input type="radio" name="colors" id="colors" value="green"><span>Green</span>
+    <input type="radio" name="colors" id="colors" value="blue"><span>Blue</span>
+    <input type="button" name="button" id="button" value="Change Color" onclick="changeColor()">
+
+    <script>
+        function changeColor(){
+            var colors=document.getElementsByName("colors");
+            for(let i=0;i<3;i++){
+                if(colors[i].checked){
+                    document.body.style.backgroundColor=colors[i].value;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
