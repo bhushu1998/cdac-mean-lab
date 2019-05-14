@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+</head>
+
+<body>
+    <h2 id="cities"><a href="#">Cities</a></h2>
+    <ul id="cities-list">
+        <li>Mumbai</li>
+        <li>Delhi</li>
+        <li>Pune</li>
+    </ul>
+    <br>
+    <h2 id="menu"><a href="#">Menu</a></h2>
+    <ul id="menu-list">
+        <li>Vada Pav</li>
+        <li>Samosa</li>
+        <li>Pav Bhaji</li>
+    </ul>
+    <script src="../jquery-3.4.0.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("#cities").click(()=>{
+                $("#cities-list").toggle("slow");
+            });
+            $("#menu").click(()=>{
+                $("#menu-list").toggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>
